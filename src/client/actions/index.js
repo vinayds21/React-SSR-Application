@@ -19,7 +19,30 @@ export const fetchArticles = (source) => async (dispatch) => {
     url = `https://api.spacexdata.com/v3/launches?limit=100`;
   }
 
-  const res = await axios.get(url);
+  const res = await axios.get(url)
+  // .catch(function (error) {
+  //   if (error.response) {
+  //     // Request made and server responded
+  //     retrun ({
+  //       errorStatus: error.response.status,
+  //       errorInfo: error.response.data,
+  //     });
+  //     // console.log(error.response.data);
+  //     // console.log(error.response.status);
+  //     // console.log(error.response.headers);
+  //   } else if (error.request) {
+  //     // The request was made but no response was received
+  //     // console.log(error.request);
+  //     retrun ({
+  //       errorRequest: error.request,
+  //     });
+  //   } else {
+  //     // Something happened in setting up the request that triggered an Error
+  //     retrun ({
+  //       errorRequest: error.message,
+  //     });
+  //   }
+  // });
 
   dispatch({
     type: FETCH_ARTICLES,
