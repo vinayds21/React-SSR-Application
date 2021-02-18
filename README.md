@@ -16,8 +16,16 @@ React-SSR Application
 
 <h4>Functionality/Requirement Coverage</h4>
 <ul>
-  <li>Responsive application to show all the vehicle launches by SpaceX</li>
+  <li>Responsive application (Mobile, Web and Tablets) to show all the vehicle launches by SpaceX</li>
   <li>Year and Successful Launch Filter Implemeneted</li>
+</ul>
+
+<h4>Results from Light House Testing</h4>
+<ul>
+  <li>Performance 74</li>
+  <li>Accessibility 94</li>
+  <li>Best Practices 93</li>
+  <li>SEO 90</li>
 </ul>
 
 <h4>Steps to run the code</h4>
