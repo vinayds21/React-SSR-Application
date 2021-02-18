@@ -9,9 +9,15 @@ React-SSR Application
   <li>Server Side Rendering</li>
   <li>Materializecss</li>
   <li>Axios for fetching API data</li>
-  <li><li>ESLINT & prettier</li>
+  <li>ESLINT & prettier</li>
   <li>LazyLoaing for Images</li>
   <li>Error handling of component by using Error Boundries</li>
+</ul>
+
+<h4>Functionality/Requirement Coverage</h4>
+<ul>
+  <li>Responsive application to show all the vehicle launches by SpaceX</li>
+  <li>Year and Successful Launch Filter Implemeneted</li>
 </ul>
 
 <h4>Steps to run the code</h4>
