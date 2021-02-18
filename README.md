@@ -10,7 +10,7 @@ React-SSR Application
   <li>Materializecss</li>
   <li>Axios for fetching API data</li>
   <li>ESLINT & prettier</li>
-  <li>LazyLoaing for Images</li>
+  <li>LazyLoading for Images</li>
   <li>Error handling of component by using Error Boundries</li>
 </ul>
 
