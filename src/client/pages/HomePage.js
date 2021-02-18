@@ -10,8 +10,8 @@ import { fetchArticles } from '../actions';
 
 const HomePage = (props) => {
   const { fetchArticles: loadArticles } = props;
-  const [launchYear, setLaunchYear] = useState(0);
-  const [successfulLaunch, setSuccessfulLaunch] = useState('YES');
+  // const [launchYear, setLaunchYear] = useState(0);
+  // const [successfulLaunch, setSuccessfulLaunch] = useState('YES');
 
   const getMissionId = (missionIdArr) => {
     if (missionIdArr.length) {
@@ -46,7 +46,7 @@ const HomePage = (props) => {
         </div>
         <div className="card-content">
           <h6>{getTruncatedValue(article.mission_name)}</h6>
-          <p>#{article.flight_number}</p>
+          <p>{`# ${article.flight_number}`}</p>
           <p>
             <b>Mission ID(s): &nbsp;</b>
             {getMissionId(article.mission_id)}
@@ -67,15 +67,16 @@ const HomePage = (props) => {
   const renderArticles = () => {
     const { articles } = props;
     // console.log('launchYear', launchYear, successfulLaunch);
-    return articles.map((article) => {
-      // if (launchYear === article.launch_year) {
-      //   return getVehicleData(article);
-      // }
-      // if (successfulLaunch === article.launch_success) {
-      //   return getVehicleData(article);
-      // }
-      return getVehicleData(article);
-    });
+    if (articles.length) {
+      return articles.map((article) => {
+        return getVehicleData(article);
+      });
+    }
+    return (
+      <div>
+        <h4>No Launch Data Found</h4>
+      </div>
+    );
   };
 
   const head = () => {
