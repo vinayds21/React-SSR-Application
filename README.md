@@ -1,24 +1,31 @@
-Responsive React-SSR Application For SpaceX Launch Program apllication with Filters
+React-SSR Application
 
-Highlights
+<h4>Project - Responsive React-SSR Application For SpaceX Launch Program apllication with Filters</h4>
 
-React 17 with Redux-Thunk
+<h4>Highlights</h4>
+<ul>
+  <li>React 17 with Redux-Thunk</li>
+  <li>Webpack 4.X</li>
+  <li>Server Side Rendering</li>
+  <li>Materializecss</li>
+  <li>Axios for fetching API data</li>
+  <li>ESLINT & prettier</li>
+  <li>LazyLoaing for Images</li>
+  <li>Error handling of component by using Error Boundries</li>
+</ul>
 
-Webpack 4.X
+<h4>Functionality/Requirement Coverage</h4>
+<ul>
+  <li>Responsive application to show all the vehicle launches by SpaceX</li>
+  <li>Year and Successful Launch Filter Implemeneted</li>
+</ul>
 
-Materializecss
-
-Axios for fetching API data
-
-ESLINT & prettier
-
-Steps to run the code
-
-Git Clone the Repo
-
-run - npm install
-
-to run in the local (http://localhost:3000) - npm run dev
+<h4>Steps to run the code</h4>
+<ul>
+  <li>Git Clone the Repo</li>
+<li>Install dependencies by running - npm install</li>
+<li>to run in the local (http://localhost:3000) - npm run dev</li>
+</ul>
 
 
 
