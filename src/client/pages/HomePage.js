@@ -67,7 +67,7 @@ const HomePage = (props) => {
   const renderArticles = () => {
     const { articles } = props;
     // console.log('launchYear', launchYear, successfulLaunch);
-    if (articles.length) {
+    if (articles.length > 0) {
       return articles.map((article) => {
         return getVehicleData(article);
       });

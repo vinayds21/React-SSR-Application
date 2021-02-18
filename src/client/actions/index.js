@@ -1,11 +1,9 @@
 import axios from 'axios';
-import config from '../../../config';
 
 export const FETCH_ARTICLES = 'fetch_articles';
 
 export const fetchArticles = (source) => async (dispatch) => {
   let url;
-  console.log('source', source);
   if (source && (source.year || source.launch_success)) {
     if (source.launch_success) {
       url = `https://api.spacexdata.com/v3/launches?limit=100&launch_success=${
@@ -19,7 +17,7 @@ export const fetchArticles = (source) => async (dispatch) => {
     url = `https://api.spacexdata.com/v3/launches?limit=100`;
   }
 
-  const res = await axios.get(url)
+  const res = await axios.get(url);
   // .catch(function (error) {
   //   if (error.response) {
   //     // Request made and server responded
